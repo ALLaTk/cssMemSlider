@@ -31,3 +31,23 @@ select {
   font: inherit;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+}
+
+.slider__container{
+  display: flex;
+  margin: auto;
+}
+
+.slider__images {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
