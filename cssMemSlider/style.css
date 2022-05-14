@@ -28,7 +28,7 @@ body {
 .container{
   width: 47rem;
   display: block;
-  padding: 1.3rem;
+  padding: 2rem;
 }
 
 .input {
@@ -66,6 +66,7 @@ body {
   overflow: hidden;
   display: flex;
   width: 60%;
+  align-items: center;
 }
 
 .text__item{
@@ -96,7 +97,7 @@ body {
 }
 
 .btn__active {
-  width: 2.5rem;
+  width: 2rem;
   height: 2.5rem;
   border-radius: 50%;
   cursor: pointer;
