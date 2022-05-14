@@ -18,6 +18,7 @@ select {
 }
 
 body {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,9 +27,9 @@ body {
 }
 
 .container{
-  width: 40rem;
+  width: 47rem;
   display: block;
-  padding: 2rem;
+  padding: 1.3rem;
 }
 
 .input {
@@ -78,27 +79,39 @@ body {
 }
 
 .label__content {
-  justify-content: end;
-  height: 1.3rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
 }
 
-.check__radio {
+.btn__radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1.2rem;
   height: 1.2rem;
-  margin-left: 0.8rem;
   background: #009688;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0.8rem;
+}
+
+.btn__active {
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.check__radio:hover {
- background: rgb(214, 219, 68);
- transition: 0.5s;
+.btn__radio:hover {
+  background: rgb(255, 255, 255);
+  transition: 0.5s;
 }
 
-.check__radio:active {
-  background: rgb(255, 21, 76);
+.btn__radio:active {
+  background: rgb(255, 217, 0);
+  opacity: .3;
 }
 
 #radio__1:checked ~ .slider__container .slider__images
@@ -130,13 +143,24 @@ body {
   transform: translateX(-300%);
 }
 
-#radio__1:checked ~ .slider__content .btn__1 .check__radio,
-#radio__2:checked ~ .slider__content .btn__2 .check__radio,
-#radio__3:checked ~ .slider__content .btn__3 .check__radio,
-#radio__4:checked ~ .slider__content .btn__4 .check__radio{
+#radio__1:checked ~ .slider__content .btn__1,
+#radio__2:checked ~ .slider__content .btn__2,
+#radio__3:checked ~ .slider__content .btn__3,
+#radio__4:checked ~ .slider__content .btn__4 {
   border: 0.2rem solid #009688;
-  background-color: rgb(214, 219, 68);
+  background-color: rgb(0, 0, 0);
   box-sizing: border-box;
 }
+
+#radio__1:checked~.slider__content .btn__1:hover,
+#radio__2:checked~.slider__content .btn__2:hover,
+#radio__3:checked~.slider__content .btn__3:hover,
+#radio__4:checked~.slider__content .btn__4:hover {
+  border: 0.2rem solid #ffffff;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+
 
 
