@@ -170,6 +170,11 @@ body {
 }
 
 @media (max-width: 417px) {
+
+  .container {
+    width: 20rem;
+  }
+
   .slider__content {
     flex-direction: column;
     margin-top: 1.6rem;
