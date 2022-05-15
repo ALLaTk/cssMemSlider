@@ -17,18 +17,20 @@ select {
 }
 
 body {
-  overflow: hidden;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   background: black;
   height: 100vh;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .container{
-  width: 47rem;
+  max-width: 47rem;
+  padding: 1.3rem;
   display: block;
-  padding: 2rem;
 }
 
 .input {
@@ -170,9 +172,10 @@ body {
 }
 
 @media (max-width: 417px) {
-
+  
   .container {
-    width: 20rem;
+      width: 100%;
+      padding: 0 0.6rem;
   }
 
   .slider__content {
